@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/WEB-INF/decorators">
+	<!-- 不需要过滤的请求 -->  
+	 <excludes>  
+	  <pattern>/resource/*</pattern>  
+	  <pattern>/js/*</pattern>  
+	  <pattern>/themes/*</pattern>  
+	  <pattern>/user</pattern>  
+	  <pattern>/css/*</pattern>
+	  <pattern>/js/*</pattern>
+	  <pattern>/lay/*</pattern>
+	  <pattern>*.json</pattern>
+	  <pattern>*.html</pattern>
+	 </excludes>
+	 <!-- 需要过滤的 -->
+    <decorator name="basic-theme" page="theme_down_menu.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>
